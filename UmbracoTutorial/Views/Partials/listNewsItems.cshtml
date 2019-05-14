@@ -1,0 +1,20 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<h1>@Umbraco.Field("pageName")</h1>
+
+@{
+	var selection = Umbraco.TypedContent(1165).Children("newsItem")
+						.Where(x => x.IsVisible())
+						.OrderBy("CreateDate desc");
+}
+
+
+<ul>
+	@foreach(var item in selection)
+	{
+		<li>
+		    <strong><a href="@item.Url">@item.Name</a></strong>
+		    <p>@item.GetPropertyValue("summary")</p>
+		</li>
+	}
+</ul>

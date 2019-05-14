@@ -1,0 +1,12 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.NewsArea>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master1.cshtml";
+}
+
+
+<h1>@Umbraco.Field("pageName")</h1>
+
+<h3>@Umbraco.Field("bodyText")</h3>
+
+@Html.Partial("listNewsItems")

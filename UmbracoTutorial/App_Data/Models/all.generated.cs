@@ -8,8 +8,8 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5a13e947272c4fc9")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5a7afabfbe5a1f99")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
 
 
 // FILE: models.generated.cs
@@ -1197,6 +1197,85 @@ namespace Umbraco.Web.PublishedContentModels
 		public IHtmlString BodyText
 		{
 			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+		}
+	}
+
+	/// <summary>News Area</summary>
+	[PublishedContentModel("newsArea")]
+	public partial class NewsArea : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "newsArea";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public NewsArea(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NewsArea, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Introduction
+		///</summary>
+		[ImplementPropertyType("bodyText")]
+		public IHtmlString BodyText
+		{
+			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+		}
+	}
+
+	/// <summary>News Item</summary>
+	[PublishedContentModel("newsItem")]
+	public partial class NewsItem : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "newsItem";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public NewsItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NewsItem, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Content: Add Content for the News Item
+		///</summary>
+		[ImplementPropertyType("bodyText")]
+		public IHtmlString BodyText
+		{
+			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+		}
+
+		///<summary>
+		/// Summary: A summary of a specific news item
+		///</summary>
+		[ImplementPropertyType("Summary")]
+		public string Summary
+		{
+			get { return this.GetPropertyValue<string>("Summary"); }
 		}
 	}
 
