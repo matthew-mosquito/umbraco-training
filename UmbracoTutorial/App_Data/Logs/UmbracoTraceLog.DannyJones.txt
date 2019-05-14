@@ -1595,3 +1595,8 @@ System.IO.IOException: The process cannot access the file 'C:\Users\Matthew Wint
  2019-05-14 09:57:18,355 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
  2019-05-14 09:57:34,434 [P22508/D13/T50] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
  2019-05-14 09:57:34,437 [P22508/D13/T50] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 10:11:11,673 [P22508/D13/T59] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: matthew@mosquitodigital.co.uk, IP Address: ::1
+ 2019-05-14 10:15:24,257 [P22508/D13/T29] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username matthew@mosquitodigital.co.uk from IP address ::1
+ 2019-05-14 10:15:24,259 [P22508/D13/T29] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: matthew@mosquitodigital.co.uk logged in from IP address ::1
+ 2019-05-14 10:16:08,037 [P22508/D13/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 10:16:08,038 [P22508/D13/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
