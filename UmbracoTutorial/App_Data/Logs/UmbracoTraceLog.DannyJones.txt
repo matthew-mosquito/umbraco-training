@@ -1746,3 +1746,75 @@ System.Web.HttpCompileException (0x80004005): C:\Users\Matthew Winterbottom\sour
  2019-05-14 10:52:49,919 [P22508/D13/T29] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About us' with Id '1153' has been published.
  2019-05-14 10:52:54,356 [P22508/D13/T76] INFO  umbraco.content - Save Xml to file...
  2019-05-14 10:52:54,366 [P22508/D13/T76] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 10:57:15,615 [P22508/D13/T45] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 10:57:15,615 [P22508/D13/T45] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 10:59:26,584 [P22508/D13/T50] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Welcome' with Id '1149' has been published.
+ 2019-05-14 10:59:30,989 [P22508/D13/T48] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 10:59:30,997 [P22508/D13/T48] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 11:33:54,820 [P22508/D13/T59] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:37:01,475 [P22508/D13/T45] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:37:06,976 [P22508/D13/T47] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:39:55,640 [P22508/D13/T61] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:40:07,929 [P22508/D13/T62] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:40:49,901 [P22508/D13/T48] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:40:49,901 [P22508/D13/T48] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:41:05,209 [P22508/D13/T50] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:41:05,209 [P22508/D13/T50] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:42:16,073 [P22508/D13/T29] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:42:26,194 [P22508/D13/T76] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:42:26,195 [P22508/D13/T76] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:43:22,514 [P22508/D13/T53] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:43:22,514 [P22508/D13/T53] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:43:28,444 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:43:28,444 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:44:28,623 [P22508/D13/T50] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:44:28,623 [P22508/D13/T50] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:44:32,633 [P22508/D13/T50] INFO  umbraco.content - Loading content from database...
+ 2019-05-14 11:44:37,035 [P22508/D13/T53] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 11:44:37,043 [P22508/D13/T53] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 11:45:00,087 [P22508/D13/T54] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 11:45:37,850 [P22508/D13/T54] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars on property editor Umbraco.Textbox
+ 2019-05-14 11:45:37,865 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default on property editor Umbraco.TrueFalse
+ 2019-05-14 11:45:37,865 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field labelOn on property editor Umbraco.TrueFalse
+ 2019-05-14 11:45:37,870 [P22508/D13/T48] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars on property editor Umbraco.TextboxMultiple
+ 2019-05-14 11:45:37,870 [P22508/D13/T48] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field rows on property editor Umbraco.TextboxMultiple
+ 2019-05-14 11:45:37,889 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars on property editor Umbraco.TextboxMultiple
+ 2019-05-14 11:45:37,889 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field rows on property editor Umbraco.TextboxMultiple
+ 2019-05-14 11:45:39,059 [P22508/D13/T54] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:45:39,060 [P22508/D13/T54] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:48:46,975 [P22508/D13/T53] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:48:46,976 [P22508/D13/T53] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:48:54,765 [P22508/D13/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:48:54,766 [P22508/D13/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:50:01,018 [P22508/D13/T62] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Welcome' with Id '1149' has been published.
+ 2019-05-14 11:50:05,407 [P22508/D13/T29] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 11:50:05,413 [P22508/D13/T29] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 11:50:13,666 [P22508/D13/T50] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Welcome' with Id '1149' has been published.
+ 2019-05-14 11:50:18,066 [P22508/D13/T48] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 11:50:18,073 [P22508/D13/T48] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 11:50:25,296 [P22508/D13/T48] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Welcome' with Id '1149' has been published.
+ 2019-05-14 11:50:29,704 [P22508/D13/T48] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 11:50:29,744 [P22508/D13/T48] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 11:51:23,152 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:51:23,153 [P22508/D13/T29] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:55:33,043 [P22508/D13/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field editor on property editor Umbraco.TinyMCEv3
+ 2019-05-14 11:55:33,044 [P22508/D13/T47] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field hideLabel on property editor Umbraco.TinyMCEv3
+ 2019-05-14 12:02:03,442 [P22508/D13/T47] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Documentation' with Id '1152' has been published.
+ 2019-05-14 12:02:06,413 [P22508/D13/T47] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2019-05-14 12:02:07,872 [P22508/D13/T59] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 12:02:07,878 [P22508/D13/T59] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 12:02:13,358 [P22508/D13/T59] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Documentation' with Id '1152' has been published.
+ 2019-05-14 12:02:17,798 [P22508/D13/T59] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 12:02:17,812 [P22508/D13/T59] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 12:02:43,493 [P22508/D13/T45] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About us' with Id '1153' has been published.
+ 2019-05-14 12:02:47,817 [P22508/D13/T61] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 12:02:47,823 [P22508/D13/T61] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 12:02:50,173 [P22508/D13/T62] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Welcome' with Id '1149' has been published.
+ 2019-05-14 12:02:54,503 [P22508/D13/T47] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 12:02:54,522 [P22508/D13/T47] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 12:02:55,508 [P22508/D13/T50] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'About us' with Id '1153' has been published.
+ 2019-05-14 12:02:59,838 [P22508/D13/T47] INFO  umbraco.content - Save Xml to file...
+ 2019-05-14 12:02:59,860 [P22508/D13/T47] INFO  umbraco.content - Saved Xml to file.
+ 2019-05-14 12:19:06,622 [P22508/D13/T76] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: matthew@mosquitodigital.co.uk, IP Address: ::1
+ 2019-05-14 13:01:08,328 [P22508/D13/T45] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username matthew@mosquitodigital.co.uk from IP address ::1
+ 2019-05-14 13:01:08,329 [P22508/D13/T45] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: matthew@mosquitodigital.co.uk logged in from IP address ::1
