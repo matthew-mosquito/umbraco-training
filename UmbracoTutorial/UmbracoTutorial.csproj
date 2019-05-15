@@ -322,6 +322,7 @@
     <Content Include="Views\NewsItem.cshtml" />
     <Content Include="Views\Master1.cshtml" />
     <Content Include="Views\Partials\sideNavigation.cshtml" />
+    <Content Include="Views\Partials\promoSlider.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
