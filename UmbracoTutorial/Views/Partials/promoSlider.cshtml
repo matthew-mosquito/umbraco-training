@@ -12,15 +12,15 @@
     <div class="carousel-inner">
         @foreach (var item in selection)
         {
-            <div class="carousel-item @item.IsFirst("active")">
-                <img src="@item.GetPropertyValue("Image")" alt="Alternate Text" />
-                <div class="carousel-caption">
-                    <h2>@item.Name</h2>
-                    <h3>@item.GetPropertyValue("Subheading")</h3>
-                    <p>@item.GetPropertyValue("Description")</p>
-                    <p><a href="@Umbraco.Content(item.GetPropertyValue("Link")).Url" role="button">Read More</a></p>
+                    <div class="carousel-item @item.IsFirst("active")">
+                    <img src="@item.GetCropUrl("Image", "promoHome")" alt="Alternate Text" />
+                    <div class="carousel-caption">
+                        <h2>@item.Name</h2>
+                        <h3>@item.GetPropertyValue("Subheading")</h3>
+                        <p>@item.GetPropertyValue("Description")</p>
+                        <p><a href="@Umbraco.Content(item.GetPropertyValue("Link")).Url" role="button">Read More</a></p>
+                    </div>
                 </div>
-            </div>
         }
     </div>
 
