@@ -8,6 +8,6 @@
 @RenderBody()
 
 <div class="col-md-3 sidebar">
-    <h3>Section Name</h3>
+    <h3>@Umbraco.Field("sectionName", altText: "In this section", recursive: true)</h3>
     @RenderSection("sidebar", required: false)
 </div>

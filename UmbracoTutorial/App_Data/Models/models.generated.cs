@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5a7afabfbe5a1f99")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "204cb26e66399677")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
@@ -1181,6 +1181,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public IHtmlString BodyText
 		{
 			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+		}
+
+		///<summary>
+		/// Section Name
+		///</summary>
+		[ImplementPropertyType("sectionName")]
+		public string SectionName
+		{
+			get { return this.GetPropertyValue<string>("sectionName"); }
 		}
 	}
 
