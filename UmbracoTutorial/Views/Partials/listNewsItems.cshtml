@@ -14,7 +14,11 @@
 	{
 		<li>
 		    <strong><a href="@item.Url">@item.Name</a></strong>
-		    <p>@item.GetPropertyValue("summary")</p>
+		    <p>
+                @item.GetPropertyValue("summary")
+                <br />
+                @item.CreateDate.ToLongDateString()
+            </p>
 		</li>
 	}
 </ul>
