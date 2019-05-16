@@ -1,5 +1,12 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.FAqitem>
 @using ContentModels = Umbraco.Web.PublishedContentModels;
 @{
-	Layout = null;
+	Layout = "SubMaster.cshtml";
 }
+
+@Umbraco.Field("answer")
+<p>
+    @Umbraco.Field("yourName")
+    <br />
+    @Umbraco.Field("yourEmail")
+</p>
