@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4757307cdeaa3e45")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "7abc7955fa9798e2")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -598,9 +598,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// Pick a Contact Form: If Umbraco Forms is installed you'll be able to select a form here.
 		///</summary>
 		[ImplementPropertyType("contactForm")]
-		public string ContactForm
+		public object ContactForm
 		{
-			get { return this.GetPropertyValue<string>("contactForm"); }
+			get { return this.GetPropertyValue("contactForm"); }
 		}
 
 		///<summary>

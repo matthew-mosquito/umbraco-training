@@ -4,9 +4,11 @@
 	Layout = "SubMaster.cshtml";
 }
 
-@Umbraco.Field("answer")
-<p>
-    @Umbraco.Field("yourName")
-    <br />
-    @Umbraco.Field("yourEmail")
-</p>
+<div class="container">
+    @Umbraco.Field("answer")
+    <p>
+        Asked by: @Umbraco.Field("yourName")
+        <br />
+        Email: @Umbraco.Field("yourEmail")
+    </p>
+</div>

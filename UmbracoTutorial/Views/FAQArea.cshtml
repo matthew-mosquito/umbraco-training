@@ -4,4 +4,12 @@
 	Layout = "SubMaster.cshtml";
 }
 
-@Html.Partial("listFAQItems")
+<div class="container">
+    @Html.Partial("listFAQItems")
+
+    <p>
+        <a href="?altTemplate=AddQuestion" class="btn btn-primary">
+            Ask a question
+        </a>
+    </p>
+</div>
