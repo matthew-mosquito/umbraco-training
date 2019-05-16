@@ -1,0 +1,13 @@
+﻿@inherits UmbracoTemplatePage
+@{
+	Layout = "Master1.cshtml";
+}
+
+<h1>@Umbraco.Field("pageName")</h1>
+
+@RenderBody()
+
+<div class="col-md-3 sidebar">
+    <h3>@Umbraco.Field("sectionName", altText: "In this section", recursive: true)</h3>
+    @RenderSection("sidebar", required: false)
+</div>

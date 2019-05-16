@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TextPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "SubMaster.cshtml";
+}
+
+<p>@Umbraco.Field("bodyText")</p>
+
+@section sidebar
+{
+    @Html.Partial("sideNavigation")
+}
+

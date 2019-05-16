@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.NewsArea>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "SubMaster.cshtml";
+}
+
+@Umbraco.Field("bodyText")
+@Html.Partial("listNewsItems")
+
+@section sidebar
+{
+    @Html.Partial("sideNavigation")
+}
