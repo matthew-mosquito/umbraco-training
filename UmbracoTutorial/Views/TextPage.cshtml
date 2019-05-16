@@ -4,10 +4,15 @@
 	Layout = "SubMaster.cshtml";
 }
 
-<p>@Umbraco.Field("bodyText")</p>
+<div class="container">
+    <h1>@Umbraco.Field("pageName")</h1>
+    <p>@Umbraco.Field("bodyText")</p>
+    @section sidebar
+    {
+        @Html.Partial("sideNavigation")
+    }
+</div>
 
-@section sidebar
-{
-    @Html.Partial("sideNavigation")
-}
+
+
 
