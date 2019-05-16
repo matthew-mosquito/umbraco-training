@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "13109d585f31c2cf")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b43077e16feb6c67")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -1263,12 +1263,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Content: Add Content for the News Item
+		/// Content
 		///</summary>
 		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText
+		public Newtonsoft.Json.Linq.JToken BodyText
 		{
-			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("bodyText"); }
 		}
 
 		///<summary>
