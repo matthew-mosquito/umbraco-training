@@ -6,21 +6,19 @@
                         .Where(x => x.IsVisible());
 }
 
-
 <div id="demo" class="carousel slide" data-ride="carousel">
     <!-- The slideshow -->
     <div class="carousel-inner">
         @foreach (var item in selection)
         {
-                    <div class="carousel-item @item.IsFirst("active")">
-                    <img src="@item.GetCropUrl("Image", "promoHome")" alt="Alternate Text" />
-                    <div class="carousel-caption">
-                        <h2>@item.Name</h2>
-                        <h3>@item.GetPropertyValue("Subheading")</h3>
-                        <p>@item.GetPropertyValue("Description")</p>
-                        <p><a href="@Umbraco.Content(item.GetPropertyValue("Link")).Url" role="button">Read More</a></p>
-                    </div>
-                </div>
+        <div class="carousel-item @item.IsFirst("active")" style="background-image:url(@item.GetCropUrl("image", "promoHome"));">
+            <div class="carousel-caption">
+                <h2>@item.Name</h2>
+                <h3>@item.GetPropertyValue("subheading")</h3>
+                <p>@item.GetPropertyValue("description")</p>
+                <p><a class="btn btn-info" href="@Umbraco.Content(item.GetPropertyValue("link")).Url">Read More</a></p>
+            </div>
+        </div>
         }
     </div>
 
@@ -32,5 +30,3 @@
         <span class="carousel-control-next-icon"></span>
     </a>
 </div>
-
-<h3>From Partial View</h3>
