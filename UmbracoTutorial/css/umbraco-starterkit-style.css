@@ -22,6 +22,16 @@ body {
     margin: 0
 }
 
+.carousel-item {
+    height: 100vh;
+    min-height: 100vw;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block
 }

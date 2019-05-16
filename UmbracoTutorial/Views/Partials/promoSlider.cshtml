@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+
+@{
+    var selection = Umbraco.TypedContent(1187).Children("promoItem")
+                        .Where(x => x.IsVisible());
+}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        @foreach (var item in selection)
+        {
+        <div class="carousel-item @item.IsFirst("active")" style="background-image:url(@item.GetCropUrl("image", "promoHome"));">
+            <div class="carousel-caption">
+                <h2>@item.Name</h2>
+                <h3>@item.GetPropertyValue("subheading")</h3>
+                <p>@item.GetPropertyValue("description")</p>
+                <p><a class="btn btn-info" href="@item.GetPropertyValue("link")">Read More</a></p>
+            </div>
+        </div>
+        }
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
