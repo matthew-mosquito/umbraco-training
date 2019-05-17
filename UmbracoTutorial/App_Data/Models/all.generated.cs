@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "13109d585f31c2cf")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c377a295b1cf082b")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
@@ -598,9 +598,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// Pick a Contact Form: If Umbraco Forms is installed you'll be able to select a form here.
 		///</summary>
 		[ImplementPropertyType("contactForm")]
-		public string ContactForm
+		public object ContactForm
 		{
-			get { return this.GetPropertyValue<string>("contactForm"); }
+			get { return this.GetPropertyValue("contactForm"); }
 		}
 
 		///<summary>
@@ -1156,12 +1156,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Body Text
+		/// FAQs to highlight
 		///</summary>
-		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText
+		[ImplementPropertyType("faqsToHighlight")]
+		public IEnumerable<IPublishedContent> FaqsToHighlight
 		{
-			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("faqsToHighlight"); }
 		}
 	}
 
@@ -1188,15 +1188,6 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TextPage, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-		}
-
-		///<summary>
-		/// Body Text
-		///</summary>
-		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText
-		{
-			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
 		}
 
 		///<summary>
@@ -1242,15 +1233,6 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
-
-		///<summary>
-		/// Introduction
-		///</summary>
-		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText
-		{
-			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
-		}
 	}
 
 	/// <summary>News Item</summary>
@@ -1279,12 +1261,12 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Content: Add Content for the News Item
+		/// Content
 		///</summary>
 		[ImplementPropertyType("bodyText")]
-		public IHtmlString BodyText
+		public Newtonsoft.Json.Linq.JToken BodyText
 		{
-			get { return this.GetPropertyValue<IHtmlString>("bodyText"); }
+			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("bodyText"); }
 		}
 
 		///<summary>
@@ -1380,6 +1362,120 @@ namespace Umbraco.Web.PublishedContentModels
 #pragma warning restore 0109
 
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<PromoRepository, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Hide page?
+		///</summary>
+		[ImplementPropertyType("umbracoNaviHide")]
+		public bool UmbracoNaviHide
+		{
+			get { return this.GetPropertyValue<bool>("umbracoNaviHide"); }
+		}
+	}
+
+	/// <summary>FAQ item</summary>
+	[PublishedContentModel("fAQItem")]
+	public partial class FAqitem : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "fAQItem";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public FAqitem(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<FAqitem, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Answer
+		///</summary>
+		[ImplementPropertyType("answer")]
+		public IHtmlString Answer
+		{
+			get { return this.GetPropertyValue<IHtmlString>("answer"); }
+		}
+
+		///<summary>
+		/// Your Email
+		///</summary>
+		[ImplementPropertyType("yourEmail")]
+		public string YourEmail
+		{
+			get { return this.GetPropertyValue<string>("yourEmail"); }
+		}
+
+		///<summary>
+		/// Your Name
+		///</summary>
+		[ImplementPropertyType("yourName")]
+		public string YourName
+		{
+			get { return this.GetPropertyValue<string>("yourName"); }
+		}
+	}
+
+	/// <summary>FAQ Area</summary>
+	[PublishedContentModel("fAQArea")]
+	public partial class FAqarea : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "fAQArea";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public FAqarea(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<FAqarea, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>ezSearch</summary>
+	[PublishedContentModel("ezSearch")]
+	public partial class EzSearch : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "ezSearch";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public EzSearch(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<EzSearch, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
