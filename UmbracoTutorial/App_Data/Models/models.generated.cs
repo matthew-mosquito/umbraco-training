@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "4757307cdeaa3e45")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "3793066c508523a2")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -582,9 +582,9 @@ namespace Umbraco.Web.PublishedContentModels
 		/// Pick a Contact Form: If Umbraco Forms is installed you'll be able to select a form here.
 		///</summary>
 		[ImplementPropertyType("contactForm")]
-		public string ContactForm
+		public object ContactForm
 		{
-			get { return this.GetPropertyValue<string>("contactForm"); }
+			get { return this.GetPropertyValue("contactForm"); }
 		}
 
 		///<summary>
@@ -1137,6 +1137,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HomePage, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// FAQs to highlight
+		///</summary>
+		[ImplementPropertyType("faqsToHighlight")]
+		public IEnumerable<IPublishedContent> FaqsToHighlight
+		{
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("faqsToHighlight"); }
 		}
 	}
 

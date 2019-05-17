@@ -1,0 +1,14 @@
+{
+  "id": "d3b8024d-ae70-48ab-a59e-1401c384efbb",
+  "name": "Create FAQ item",
+  "form": "06f6a6bd-6115-4c29-bb73-bf0f1af76937",
+  "active": true,
+  "workflowTypeId": "89fb1e31-9f36-4e08-9d1b-af1180d340db",
+  "executesOn": "Submitted",
+  "settings": {
+    "Fields": "{\"doctype\":\"fAQItem\",\"nameField\":\"4a80d565-d386-4c3a-9417-1bdc0916642e\",\"properties\":[{\"id\":\"answer\",\"value\":\"Answer\",\"$$hashKey\":\"17U\",\"field\":\"4a80d565-d386-4c3a-9417-1bdc0916642e\",\"staticValue\":\"Not Yet Answered\"},{\"id\":\"yourEmail\",\"value\":\"Your Email\",\"$$hashKey\":\"17V\",\"field\":\"dbf333c6-3436-4d88-dd4a-28f857a1568b\"},{\"id\":\"yourName\",\"value\":\"Your Name\",\"$$hashKey\":\"17W\",\"field\":\"2e37bf03-f70e-4f80-bc84-28dc82cdb2a2\"}]}",
+    "Publish": "True",
+    "RootNode": "1210"
+  },
+  "sortOrder": 0
+}
